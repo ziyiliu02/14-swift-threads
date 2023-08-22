@@ -16,6 +16,7 @@
 		64941F9D2A9481FC0049C005 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 64941F9C2A9481FC0049C005 /* FirebaseFirestoreSwift */; };
 		64941F9F2A9481FC0049C005 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 64941F9E2A9481FC0049C005 /* FirebaseStorage */; };
 		64941FA12A9482A90049C005 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 64941FA02A9482A90049C005 /* GoogleService-Info.plist */; };
+		64941FAE2A94907B0049C005 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64941FAD2A94907B0049C005 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		64941F8E2A947C020049C005 /* _4_swift_threads.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = _4_swift_threads.entitlements; sourceTree = "<group>"; };
 		64941F902A947C020049C005 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		64941FA02A9482A90049C005 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		64941FAD2A94907B0049C005 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +64,12 @@
 		64941F872A947C000049C005 /* 14-swift-threads */ = {
 			isa = PBXGroup;
 			children = (
-				64941F882A947C000049C005 /* _4_swift_threadsApp.swift */,
-				64941F8A2A947C000049C005 /* ContentView.swift */,
+				64941FA92A948E080049C005 /* App */,
+				64941FA82A948E030049C005 /* Core */,
+				64941FA72A948DF60049C005 /* Extensions */,
+				64941FA62A948DF10049C005 /* Model */,
+				64941FA52A948DEA0049C005 /* Services */,
+				64941FA42A948DDE0049C005 /* Utils */,
 				64941F8C2A947C020049C005 /* Assets.xcassets */,
 				64941FA02A9482A90049C005 /* GoogleService-Info.plist */,
 				64941F8E2A947C020049C005 /* _4_swift_threads.entitlements */,
@@ -78,6 +84,75 @@
 				64941F902A947C020049C005 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		64941FA42A948DDE0049C005 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		64941FA52A948DEA0049C005 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		64941FA62A948DF10049C005 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		64941FA72A948DF60049C005 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		64941FA82A948E030049C005 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				64941FAB2A948E230049C005 /* Authentication */,
+				64941FAA2A948E1A0049C005 /* Root */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		64941FA92A948E080049C005 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				64941F882A947C000049C005 /* _4_swift_threadsApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		64941FAA2A948E1A0049C005 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				64941F8A2A947C000049C005 /* ContentView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		64941FAB2A948E230049C005 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				64941FAC2A94906C0049C005 /* Views */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		64941FAC2A94906C0049C005 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				64941FAD2A94907B0049C005 /* LoginView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64941FAE2A94907B0049C005 /* LoginView.swift in Sources */,
 				64941F8B2A947C000049C005 /* ContentView.swift in Sources */,
 				64941F892A947C000049C005 /* _4_swift_threadsApp.swift in Sources */,
 			);
