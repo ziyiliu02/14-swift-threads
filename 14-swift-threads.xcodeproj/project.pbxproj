@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		648A30842A94B23600D4FEFE /* ThreadsTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648A30832A94B23600D4FEFE /* ThreadsTextFieldModifier.swift */; };
 		64941F892A947C000049C005 /* _4_swift_threadsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64941F882A947C000049C005 /* _4_swift_threadsApp.swift */; };
 		64941F8B2A947C000049C005 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64941F8A2A947C000049C005 /* ContentView.swift */; };
 		64941F8D2A947C020049C005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64941F8C2A947C020049C005 /* Assets.xcassets */; };
@@ -17,9 +18,11 @@
 		64941F9F2A9481FC0049C005 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 64941F9E2A9481FC0049C005 /* FirebaseStorage */; };
 		64941FA12A9482A90049C005 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 64941FA02A9482A90049C005 /* GoogleService-Info.plist */; };
 		64941FAE2A94907B0049C005 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64941FAD2A94907B0049C005 /* LoginView.swift */; };
+		64941FB02A949F650049C005 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64941FAF2A949F650049C005 /* RegistrationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		648A30832A94B23600D4FEFE /* ThreadsTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTextFieldModifier.swift; sourceTree = "<group>"; };
 		64941F852A947C000049C005 /* 14-swift-threads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "14-swift-threads.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		64941F882A947C000049C005 /* _4_swift_threadsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _4_swift_threadsApp.swift; sourceTree = "<group>"; };
 		64941F8A2A947C000049C005 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -28,6 +31,7 @@
 		64941F902A947C020049C005 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		64941FA02A9482A90049C005 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		64941FAD2A94907B0049C005 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		64941FAF2A949F650049C005 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		648A30822A94B20800D4FEFE /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				648A30832A94B23600D4FEFE /* ThreadsTextFieldModifier.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
 		64941F7C2A947C000049C005 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +101,7 @@
 		64941FA42A948DDE0049C005 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				648A30822A94B20800D4FEFE /* ViewModifiers */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -151,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				64941FAD2A94907B0049C005 /* LoginView.swift */,
+				64941FAF2A949F650049C005 /* RegistrationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -237,7 +251,9 @@
 			files = (
 				64941FAE2A94907B0049C005 /* LoginView.swift in Sources */,
 				64941F8B2A947C000049C005 /* ContentView.swift in Sources */,
+				648A30842A94B23600D4FEFE /* ThreadsTextFieldModifier.swift in Sources */,
 				64941F892A947C000049C005 /* _4_swift_threadsApp.swift in Sources */,
+				64941FB02A949F650049C005 /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
