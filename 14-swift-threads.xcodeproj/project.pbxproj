@@ -30,6 +30,7 @@
 		64A2F49D2A95B781001D1425 /* ProfileThreadFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A2F49C2A95B781001D1425 /* ProfileThreadFilter.swift */; };
 		64A583372A95087C00BDA0D2 /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A583362A95087C00BDA0D2 /* CircularProfileImageView.swift */; };
 		64A583392A95096300BDA0D2 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A583382A95096300BDA0D2 /* UserCell.swift */; };
+		64A958D12A962FE5003DA788 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A958D02A962FE5003DA788 /* RegistrationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		64A2F49C2A95B781001D1425 /* ProfileThreadFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileThreadFilter.swift; sourceTree = "<group>"; };
 		64A583362A95087C00BDA0D2 /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
 		64A583382A95096300BDA0D2 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		64A958D02A962FE5003DA788 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,6 +293,7 @@
 		64941FAB2A948E230049C005 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				64A958CE2A962FB7003DA788 /* ViewModels */,
 				64941FAC2A94906C0049C005 /* Views */,
 			);
 			path = Authentication;
@@ -320,6 +323,14 @@
 				64A583382A95096300BDA0D2 /* UserCell.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		64A958CE2A962FB7003DA788 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				64A958D02A962FE5003DA788 /* RegistrationViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -403,6 +414,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				648A308B2A94BAEB00D4FEFE /* FeedView.swift in Sources */,
+				64A958D12A962FE5003DA788 /* RegistrationViewModel.swift in Sources */,
 				64941FAE2A94907B0049C005 /* LoginView.swift in Sources */,
 				643233132A95E7170091E327 /* EditProfileView.swift in Sources */,
 				64941F8B2A947C000049C005 /* ContentView.swift in Sources */,
