@@ -26,6 +26,7 @@
 		64941FA12A9482A90049C005 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 64941FA02A9482A90049C005 /* GoogleService-Info.plist */; };
 		64941FAE2A94907B0049C005 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64941FAD2A94907B0049C005 /* LoginView.swift */; };
 		64941FB02A949F650049C005 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64941FAF2A949F650049C005 /* RegistrationView.swift */; };
+		64A2F49D2A95B781001D1425 /* ProfileThreadFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A2F49C2A95B781001D1425 /* ProfileThreadFilter.swift */; };
 		64A583372A95087C00BDA0D2 /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A583362A95087C00BDA0D2 /* CircularProfileImageView.swift */; };
 		64A583392A95096300BDA0D2 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A583382A95096300BDA0D2 /* UserCell.swift */; };
 /* End PBXBuildFile section */
@@ -48,6 +49,7 @@
 		64941FA02A9482A90049C005 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		64941FAD2A94907B0049C005 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		64941FAF2A949F650049C005 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		64A2F49C2A95B781001D1425 /* ProfileThreadFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileThreadFilter.swift; sourceTree = "<group>"; };
 		64A583362A95087C00BDA0D2 /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
 		64A583382A95096300BDA0D2 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,6 +153,7 @@
 		648A87092A94E0BF000895B8 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				64A2F49B2A95B76F001D1425 /* Models */,
 				648A870A2A94E0C3000895B8 /* Views */,
 			);
 			path = Profile;
@@ -283,6 +286,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		64A2F49B2A95B76F001D1425 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				64A2F49C2A95B781001D1425 /* ProfileThreadFilter.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		64A583352A95084400BDA0D2 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -380,6 +391,7 @@
 				64A583372A95087C00BDA0D2 /* CircularProfileImageView.swift in Sources */,
 				64A583392A95096300BDA0D2 /* UserCell.swift in Sources */,
 				648A87042A94E04A000895B8 /* CreateThreadView.swift in Sources */,
+				64A2F49D2A95B781001D1425 /* ProfileThreadFilter.swift in Sources */,
 				648A30872A94B76200D4FEFE /* ThreadsTabView.swift in Sources */,
 				648A30842A94B23600D4FEFE /* ThreadsTextFieldModifier.swift in Sources */,
 				64941F892A947C000049C005 /* _4_swift_threadsApp.swift in Sources */,
