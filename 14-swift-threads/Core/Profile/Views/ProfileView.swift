@@ -11,7 +11,7 @@ struct ProfileView: View {
     
     @State private var selectedFilter: ProfileThreadFilter = .threads
     @Namespace var animation
-    @StateObject var viewModel = ContentViewModel()
+    @EnvironmentObject var viewModel: AuthViewModel
     
     private var filterBarWidth: CGFloat {
         let count = CGFloat(ProfileThreadFilter.allCases.count)

@@ -30,9 +30,7 @@
 		64A2F49D2A95B781001D1425 /* ProfileThreadFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A2F49C2A95B781001D1425 /* ProfileThreadFilter.swift */; };
 		64A583372A95087C00BDA0D2 /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A583362A95087C00BDA0D2 /* CircularProfileImageView.swift */; };
 		64A583392A95096300BDA0D2 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A583382A95096300BDA0D2 /* UserCell.swift */; };
-		64A958D12A962FE5003DA788 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A958D02A962FE5003DA788 /* RegistrationViewModel.swift */; };
-		64AC9D3F2A964777002D88D6 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AC9D3E2A964777002D88D6 /* ContentViewModel.swift */; };
-		64AC9D412A964EF3002D88D6 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AC9D402A964EF3002D88D6 /* LoginViewModel.swift */; };
+		64AC9D432A9716E3002D88D6 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AC9D422A9716E3002D88D6 /* AuthViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,9 +55,7 @@
 		64A2F49C2A95B781001D1425 /* ProfileThreadFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileThreadFilter.swift; sourceTree = "<group>"; };
 		64A583362A95087C00BDA0D2 /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
 		64A583382A95096300BDA0D2 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
-		64A958D02A962FE5003DA788 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
-		64AC9D3E2A964777002D88D6 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
-		64AC9D402A964EF3002D88D6 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		64AC9D422A9716E3002D88D6 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -289,7 +285,6 @@
 		64941FAA2A948E1A0049C005 /* Root */ = {
 			isa = PBXGroup;
 			children = (
-				64AC9D3D2A96452B002D88D6 /* ViewModels */,
 				64AC9D3C2A964526002D88D6 /* Views */,
 			);
 			path = Root;
@@ -333,8 +328,7 @@
 		64A958CE2A962FB7003DA788 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				64AC9D402A964EF3002D88D6 /* LoginViewModel.swift */,
-				64A958D02A962FE5003DA788 /* RegistrationViewModel.swift */,
+				64AC9D422A9716E3002D88D6 /* AuthViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -345,14 +339,6 @@
 				64941F8A2A947C000049C005 /* ContentView.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		64AC9D3D2A96452B002D88D6 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				64AC9D3E2A964777002D88D6 /* ContentViewModel.swift */,
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -435,8 +421,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64AC9D432A9716E3002D88D6 /* AuthViewModel.swift in Sources */,
 				648A308B2A94BAEB00D4FEFE /* FeedView.swift in Sources */,
-				64A958D12A962FE5003DA788 /* RegistrationViewModel.swift in Sources */,
 				64941FAE2A94907B0049C005 /* LoginView.swift in Sources */,
 				643233132A95E7170091E327 /* EditProfileView.swift in Sources */,
 				64941F8B2A947C000049C005 /* ContentView.swift in Sources */,
@@ -449,10 +435,8 @@
 				648A30872A94B76200D4FEFE /* ThreadsTabView.swift in Sources */,
 				648A30842A94B23600D4FEFE /* ThreadsTextFieldModifier.swift in Sources */,
 				64941F892A947C000049C005 /* _4_swift_threadsApp.swift in Sources */,
-				64AC9D3F2A964777002D88D6 /* ContentViewModel.swift in Sources */,
 				648A86FF2A94DFCB000895B8 /* ExploreView.swift in Sources */,
 				648A870C2A94E0F0000895B8 /* ProfileView.swift in Sources */,
-				64AC9D412A964EF3002D88D6 /* LoginViewModel.swift in Sources */,
 				64941FB02A949F650049C005 /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

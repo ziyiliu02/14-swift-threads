@@ -11,6 +11,8 @@ import SwiftUI
 @main
 struct _4_swift_threadsApp: App {
     
+    @StateObject var viewModel = AuthViewModel()
+    
     init() {
         FirebaseApp.configure()
     }
@@ -18,6 +20,7 @@ struct _4_swift_threadsApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(viewModel)
         }
     }
 }
