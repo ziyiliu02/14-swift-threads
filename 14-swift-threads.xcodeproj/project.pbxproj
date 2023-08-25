@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		643233132A95E7170091E327 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643233122A95E7170091E327 /* EditProfileView.swift */; };
+		6488C2862A974D900081EB7C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6488C2852A974D900081EB7C /* User.swift */; };
 		648A30842A94B23600D4FEFE /* ThreadsTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648A30832A94B23600D4FEFE /* ThreadsTextFieldModifier.swift */; };
 		648A30872A94B76200D4FEFE /* ThreadsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648A30862A94B76200D4FEFE /* ThreadsTabView.swift */; };
 		648A308B2A94BAEB00D4FEFE /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648A308A2A94BAEB00D4FEFE /* FeedView.swift */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		643233122A95E7170091E327 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		6488C2852A974D900081EB7C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		648A30832A94B23600D4FEFE /* ThreadsTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTextFieldModifier.swift; sourceTree = "<group>"; };
 		648A30862A94B76200D4FEFE /* ThreadsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTabView.swift; sourceTree = "<group>"; };
 		648A308A2A94BAEB00D4FEFE /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 		64941FA62A948DF10049C005 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6488C2852A974D900081EB7C /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -435,6 +438,7 @@
 				648A30872A94B76200D4FEFE /* ThreadsTabView.swift in Sources */,
 				648A30842A94B23600D4FEFE /* ThreadsTextFieldModifier.swift in Sources */,
 				64941F892A947C000049C005 /* _4_swift_threadsApp.swift in Sources */,
+				6488C2862A974D900081EB7C /* User.swift in Sources */,
 				648A86FF2A94DFCB000895B8 /* ExploreView.swift in Sources */,
 				648A870C2A94E0F0000895B8 /* ProfileView.swift in Sources */,
 				64941FB02A949F650049C005 /* RegistrationView.swift in Sources */,
