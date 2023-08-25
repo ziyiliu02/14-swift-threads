@@ -45,7 +45,7 @@ class ExploreViewModel: ObservableObject {
                 }
             }
             
-//            self.users = self.users.filter { $0.id != currentUid }
+            self.users = self.users.filter { $0.id != currentUid }
             
         }
     }
