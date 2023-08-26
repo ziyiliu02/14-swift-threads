@@ -33,7 +33,7 @@ struct ProfileView: View {
                             .cornerRadius(8)
                     }
                     
-                    UserContentListView()
+                    UserContentListView(user: user)
 
                 }
             } else {

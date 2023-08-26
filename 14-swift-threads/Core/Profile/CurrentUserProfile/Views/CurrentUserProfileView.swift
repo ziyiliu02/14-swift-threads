@@ -36,7 +36,7 @@ struct CurrentUserProfileView: View {
                                 }
                         }
                         
-                        UserContentListView()
+                        UserContentListView(user: user)
 
                     }
                 } else {
