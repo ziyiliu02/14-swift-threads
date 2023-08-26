@@ -10,6 +10,8 @@ import SwiftUI
 struct CreateThreadView: View {
     
     @State private var caption = ""
+    @StateObject var viewModel = CreateThreadViewModel()
+    @EnvironmentObject var AuthViewModel: AuthViewModel
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
@@ -18,13 +20,15 @@ struct CreateThreadView: View {
                 HStack(alignment: .top) {
                     CircularProfileImageView()
                     
-                    VStack(alignment: .leading, spacing: 4) {
-                        Text("LHL")
-                            .fontWeight(.semibold)
-                        
-                        TextField("Start a thread", text: $caption, axis: .vertical)
+                    if let user = AuthViewModel.currentUser {
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text(user.username)
+                                .fontWeight(.semibold)
+                            
+                            TextField("Start a thread", text: $caption, axis: .vertical)
+                        }
+                        .font(.footnote)
                     }
-                    .font(.footnote)
                     
                     Spacer()
                     
@@ -56,7 +60,8 @@ struct CreateThreadView: View {
                 
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Post") {
-                        
+                        viewModel.uploadThread(caption: caption)
+                        dismiss()
                     }
                     .opacity(caption.isEmpty ? 0.5 : 1.0)
                     .disabled(caption.isEmpty)
@@ -72,5 +77,6 @@ struct CreateThreadView: View {
 struct CreateThreadView_Previews: PreviewProvider {
     static var previews: some View {
         CreateThreadView()
+            .environmentObject(AuthViewModel())
     }
 }
