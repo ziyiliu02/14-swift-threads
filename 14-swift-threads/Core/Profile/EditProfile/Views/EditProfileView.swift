@@ -12,6 +12,9 @@ struct EditProfileView: View {
     @State private var bio = ""
     @State private var link = ""
     @State private var isPrivateProfile = false
+    @Environment(\.dismiss) var dismiss
+    @State var isPickerShowing = false
+    @State var selectedImage: UIImage?
     
     var body: some View {
         NavigationStack {
@@ -20,6 +23,7 @@ struct EditProfileView: View {
                     .edgesIgnoringSafeArea([.bottom, .horizontal])
                 
                 VStack {
+                    
                     // name and profile image
                     HStack {
                         VStack(alignment: .leading) {
@@ -30,8 +34,26 @@ struct EditProfileView: View {
                         }
                         
                         Spacer()
+            
+                        Button {
+                            // Show the image picker
+                            isPickerShowing = true
+                        } label: {
+                            if selectedImage != nil {
+                                Image(uiImage: selectedImage!)
+                                    .resizable()
+                                    .scaledToFill()
+                                    .frame(width: 40, height: 40)
+                                    .clipShape(Circle())
+                            } else {
+                                CircularProfileImageView()
+                            }
+                        }
+                        .sheet(isPresented: $isPickerShowing) {
+                            // Image picker
+                            ImagePicker(selectedImage: $selectedImage, isPickerShowing: $isPickerShowing)
+                        }
                         
-                        CircularProfileImageView()
                     }
                     
                     Divider()
@@ -74,7 +96,7 @@ struct EditProfileView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button("Cancel") {
-                        
+                        dismiss()
                     }
                     .font(.subheadline)
                     .foregroundColor(.black)
@@ -91,6 +113,7 @@ struct EditProfileView: View {
             }
         }
     }
+
 }
 
 struct EditProfileView_Previews: PreviewProvider {
