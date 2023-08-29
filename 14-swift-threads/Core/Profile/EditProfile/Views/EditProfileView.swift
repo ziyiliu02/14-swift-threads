@@ -14,7 +14,8 @@ struct EditProfileView: View {
     @State private var isPrivateProfile = false
     @Environment(\.dismiss) var dismiss
     @State var isPickerShowing = false
-    @State var selectedImage: UIImage?
+//    @State var selectedImage: UIImage?
+    @StateObject var viewModel = EditProfileViewModel()
     
     var body: some View {
         NavigationStack {
@@ -39,8 +40,8 @@ struct EditProfileView: View {
                             // Show the image picker
                             isPickerShowing = true
                         } label: {
-                            if selectedImage != nil {
-                                Image(uiImage: selectedImage!)
+                            if viewModel.selectedImage != nil {
+                                Image(uiImage: viewModel.selectedImage!)
                                     .resizable()
                                     .scaledToFill()
                                     .frame(width: 40, height: 40)
@@ -51,7 +52,7 @@ struct EditProfileView: View {
                         }
                         .sheet(isPresented: $isPickerShowing) {
                             // Image picker
-                            ImagePicker(selectedImage: $selectedImage, isPickerShowing: $isPickerShowing)
+                            ImagePicker(selectedImage: $viewModel.selectedImage, isPickerShowing: $isPickerShowing)
                         }
                         
                     }
@@ -104,7 +105,8 @@ struct EditProfileView: View {
                 
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Done") {
-                        
+                        Task { try await viewModel.updateUserData() }
+                        dismiss()
                     }
                     .font(.subheadline)
                     .fontWeight(.semibold)
